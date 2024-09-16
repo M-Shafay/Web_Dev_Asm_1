@@ -99,17 +99,21 @@ justify-content: end;
 h1
 {
     font-size: 5vh;
+    color: rgb(58, 98, 186);
 }
 h2
 {
+    color: rgb(58, 98, 186);
     font-size :4vh;
 }
 li
 {
+    color: rgb(58, 98, 186);
     font-size:3vh;
 }
 p{
     font-size: 3vh;
+    color: rgb(58, 98, 186);
 }
 #urdu
 {
