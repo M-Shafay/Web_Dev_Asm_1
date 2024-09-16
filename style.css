@@ -93,5 +93,31 @@ justify-content: end;
 }
 .contact >p
 {
-    padding-left: 30vw;
+    padding-left: calc(40% - 40px)!important;
+    /* I was trying to maintain the ratio so i found out we can calculate - too*/
+}
+h1
+{
+    font-size: 5vh;
+}
+h2
+{
+    font-size :4vh;
+}
+li
+{
+    font-size:3vh;
+}
+p{
+    font-size: 3vh;
+}
+#urdu
+{
+    display:flex;
+    flex-direction: row;
+    width: 95vw;
+    height: 6vh;
+    margin-right: 5vw;
+    justify-content: end;
+    padding-right: 10vw;
 }
