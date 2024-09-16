@@ -32,7 +32,6 @@ li > a:hover
     color:rgb(159, 73, 148);
 }
 body{
-  background-image: url('Computer_vision.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -41,7 +40,8 @@ body{
 .Header
 {
     display: flex;
-    text-align: center;
+    text-align: end;
+    padding-top: 1%;
     justify-content: center;
     width: 100%;
     flex-direction: row;
@@ -66,4 +66,32 @@ justify-content: end;
     width: 15vh;
     height: 15vh;
     border-radius: 50%;
+}
+.contact
+{
+    color: rgb(224, 218, 193);
+    font-size: 4vh;
+    padding-bottom: 2vh;
+    flex-direction: column;
+    display: flex;
+    width: 100vw;
+    height:80vh;
+    justify-content: center;
+    text-align: start;
+}
+.contact >p>a
+{
+    color: rgb(58, 98, 186);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact >p>a:hover
+{
+    font-size: 3.7vh;
+    color:rgb(159, 73, 148);
+}
+.contact >p
+{
+    padding-left: 30vw;
 }
