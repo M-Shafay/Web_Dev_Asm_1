@@ -137,8 +137,15 @@ p{
 {
     width: 40%;
     height: 100%;
-    object-fit: cover;
     padding-right: 5%;
     padding-left :5%;
-    border-radius: 5px;
+}
+iframe
+{
+    justify-content:center;
+    width: 40vw;
+    height: 30vh;
+    padding-left: 5%;
+    border: none;;
+    padding-right: 5%;
 }
