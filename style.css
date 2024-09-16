@@ -121,3 +121,20 @@ p{
     justify-content: end;
     padding-right: 10vw;
 }
+.Certif
+{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    height: 40%;
+}
+
+.Certif >img
+{
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+    padding-right: 5%;
+    padding-left :5%;
+    border-radius: 5px;
+}
