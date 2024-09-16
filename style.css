@@ -1,6 +1,6 @@
 .navbar
 {
-    background-color: rgb(218, 200, 177);
+    background-color: rgb(224, 218, 193);
     height: 8vh;
 }
 nav > ul
@@ -9,24 +9,61 @@ nav > ul
     list-style-type: none; 
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: center;
 }
 nav > ul > li
 {
-    padding-right: 1vh;
-    padding-left: 1vh;
+    padding-right: 1vw;
+    padding-left: 1vw;
     font-size: 3vh;
     font-family: sans-serif;
     border-right: 0.5vh solid rgb(116, 173, 199);
 }
 nav > ul > li > a
 {
-    color: rgb(98, 171, 220);
+    color: rgb(58, 98, 186);
     text-decoration: none;
-    
+    font-weight: bold;
 }
 li > a:hover
 {
     font-size: 2.7vh;
-    color:rgb(201, 132, 54);
+    color:rgb(159, 73, 148);
+}
+body{
+  background-image: url('Computer_vision.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-size: 100% 100%;
+}
+.Header
+{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: row;
+    font-size: 5vh;
+    color: rgb(224, 218, 193);
+}
+#wel
+{
+color: rgb(224, 218, 193);
+font-size: 4vh;
+padding-bottom: 2vh;
+text-align: start;
+}
+#pic
+{
+display: flex;
+width: 100%;
+justify-content: end;
+}
+.profile-pic
+{
+    width: 15vh;
+    height: 15vh;
+    border-radius: 50%;
 }
