@@ -1,0 +1,13 @@
+nav > ul
+{
+    list-style-type: none; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+nav > ul > li
+{
+    margin-right: 2vh;
+    font-size: 3vh;
+    font-family: sans-serif;
+}
