@@ -1,5 +1,11 @@
+.navbar
+{
+    background-color: rgb(218, 200, 177);
+    height: 8vh;
+}
 nav > ul
 {
+    padding-top: 2vh;
     list-style-type: none; 
     display: flex;
     flex-direction: row;
@@ -7,7 +13,20 @@ nav > ul
 }
 nav > ul > li
 {
-    margin-right: 2vh;
+    padding-right: 1vh;
+    padding-left: 1vh;
     font-size: 3vh;
     font-family: sans-serif;
+    border-right: 0.5vh solid rgb(116, 173, 199);
+}
+nav > ul > li > a
+{
+    color: rgb(98, 171, 220);
+    text-decoration: none;
+    
+}
+li > a:hover
+{
+    font-size: 2.7vh;
+    color:rgb(201, 132, 54);
 }
