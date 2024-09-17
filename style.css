@@ -37,16 +37,24 @@ body{
   background-size: cover;
   background-size: 100% 100%;
 }
+.header-container
+{
+    margin-top:10vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    border-top: 0.5vh solid cornsilk;
+    border-bottom: 0.5vh solid cornsilk;
+    display: flex;
+    height:15vh;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
 .Header
 {
-    display: flex;
-    text-align: end;
-    padding-top: 1%;
-    justify-content: center;
-    width: 100%;
-    flex-direction: row;
     font-size: 5vh;
     color: rgb(224, 218, 193);
+    font-weight: bold;
 }
 #wel
 {
@@ -58,8 +66,7 @@ text-align: start;
 #pic
 {
 display: flex;
-width: 100%;
-justify-content: end;
+padding-right: 5vw;
 }
 .profile-pic
 {
@@ -70,19 +77,19 @@ justify-content: end;
 .contact
 {
     color: rgb(224, 218, 193);
-    font-size: 4vh;
     padding-bottom: 2vh;
     flex-direction: column;
     display: flex;
-    width: 100vw;
+    width: 95vw;
     height:80vh;
     justify-content: center;
     text-align: start;
 }
 .contact >p>a
 {
-    color: rgb(58, 98, 186);
+    color: rgb(104, 147, 240);
     text-decoration: none;
+    font-size: 4vh;
     font-weight: bold;
 }
 
@@ -93,8 +100,7 @@ justify-content: end;
 }
 .contact >p
 {
-    padding-left: calc(40% - 40px)!important;
-    /* I was trying to maintain the ratio so i found out we can calculate - too*/
+    text-align: center;
 }
 h1
 {
@@ -121,6 +127,8 @@ p{
     flex-direction: row;
     width: 95vw;
     height: 6vh;
+    font-size: 6vh;
+    margin-top: 5vh;
     margin-right: 5vw;
     justify-content: end;
     padding-right: 10vw;
@@ -142,7 +150,7 @@ p{
 }
 iframe
 {
-    justify-content:center;
+    justify-cont-ent:center;
     width: 40vw;
     height: 30vh;
     padding-left: 5%;
