@@ -150,7 +150,7 @@ p{
 }
 iframe
 {
-    justify-cont-ent:center;
+    justify-content:center;
     width: 40vw;
     height: 30vh;
     padding-left: 5%;
