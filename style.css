@@ -1,11 +1,12 @@
 .navbar
 {
     background-color: rgb(224, 218, 193);
-    height: 8vh;
+    height: 8vw;
 }
 nav > ul
 {
-    padding-top: 2vh;
+    padding: 0;;
+    padding-top: 2vw;
     list-style-type: none; 
     display: flex;
     flex-direction: row;
@@ -16,9 +17,9 @@ nav > ul > li
 {
     padding-right: 1vw;
     padding-left: 1vw;
-    font-size: 3vh;
+    font-size: 3vw;
     font-family: sans-serif;
-    border-right: 0.5vh solid rgb(116, 173, 199);
+    border-right: 0.5vw solid rgb(116, 173, 199);
 }
 nav > ul > li > a
 {
@@ -28,7 +29,7 @@ nav > ul > li > a
 }
 li > a:hover
 {
-    font-size: 2.7vh;
+    font-size: 2.7vw;
     color:rgb(159, 73, 148);
 }
 body{
@@ -39,28 +40,28 @@ body{
 }
 .header-container
 {
-    margin-top:10vh;
-    padding-top: 2vh;
-    padding-bottom: 2vh;
-    border-top: 0.5vh solid cornsilk;
-    border-bottom: 0.5vh solid cornsilk;
+    margin-top:10vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    border-top: 0.5vw solid cornsilk;
+    border-bottom: 0.5vw solid cornsilk;
     display: flex;
-    height:15vh;
+    height:15vw;
     justify-content: space-between;
     align-items: center;
     width: 100%;
 }
 .Header
 {
-    font-size: 5vh;
+    font-size: 5vw;
     color: rgb(224, 218, 193);
     font-weight: bold;
 }
 #wel
 {
 color: rgb(224, 218, 193);
-font-size: 4vh;
-padding-bottom: 2vh;
+font-size: 4vw;
+padding-bottom: 2vw;
 text-align: start;
 }
 #pic
@@ -70,18 +71,18 @@ padding-right: 5vw;
 }
 .profile-pic
 {
-    width: 15vh;
-    height: 15vh;
+    width: 15vw;
+    height: 15vw;
     border-radius: 50%;
 }
 .contact
 {
     color: rgb(224, 218, 193);
-    padding-bottom: 2vh;
+    padding-bottom: 2vw;
     flex-direction: column;
     display: flex;
     width: 95vw;
-    height:80vh;
+    height:80vw;
     justify-content: center;
     text-align: start;
 }
@@ -89,13 +90,13 @@ padding-right: 5vw;
 {
     color: rgb(104, 147, 240);
     text-decoration: none;
-    font-size: 4vh;
+    font-size: 4vw;
     font-weight: bold;
 }
 
 .contact >p>a:hover
 {
-    font-size: 3.7vh;
+    font-size: 3.7vw;
     color:rgb(159, 73, 148);
 }
 .contact >p
@@ -104,21 +105,21 @@ padding-right: 5vw;
 }
 h1
 {
-    font-size: 5vh;
+    font-size: 5vw;
     color: rgb(58, 98, 186);
 }
 h2
 {
     color: rgb(58, 98, 186);
-    font-size :4vh;
+    font-size :4vw;
 }
 li
 {
     color: rgb(58, 98, 186);
-    font-size:3vh;
+    font-size:3vw;
 }
 p{
-    font-size: 3vh;
+    font-size: 3vw;
     color: rgb(58, 98, 186);
 }
 #urdu
@@ -126,9 +127,9 @@ p{
     display:flex;
     flex-direction: row;
     width: 95vw;
-    height: 6vh;
-    font-size: 6vh;
-    margin-top: 5vh;
+    height: 6vw;
+    font-size: 6vw;
+    margin-top: 5vw;
     margin-right: 5vw;
     justify-content: end;
     padding-right: 10vw;
@@ -152,7 +153,7 @@ iframe
 {
     justify-content:center;
     width: 40vw;
-    height: 30vh;
+    height: 30vw;
     padding-left: 5%;
     border: none;;
     padding-right: 5%;
