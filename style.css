@@ -94,6 +94,11 @@ padding-right: 5vw;
     font-weight: bold;
 }
 
+#certificates-container
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); ;
+}
 .contact >p>a:hover
 {
     font-size: 3.7vw;
@@ -136,25 +141,21 @@ p{
 }
 .Certif
 {
-    display: flex;
-    flex-direction: row;
-    width:100%;
-    height: 40%;
+    width: 50vw;
+    height: 50vw;
 }
 
 .Certif >img
 {
-    width: 40%;
-    height: 100%;
+    width: 50vw;
+    height: 50vw;
     padding-right: 5%;
-    padding-left :5%;
 }
 iframe
 {
     justify-content:center;
-    width: 40vw;
-    height: 30vw;
-    padding-left: 5%;
-    border: none;;
+    width: 50vw;
+    height: 50vw;
+    border: none;
     padding-right: 5%;
 }

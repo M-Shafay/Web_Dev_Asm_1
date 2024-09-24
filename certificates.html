@@ -1,46 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Muhammad Shafay | Certificate</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="icon" href="icon_img.png"type= "image/x-icon"/>
-    </head>
-    <body>
-        <div class="header-container">
-            <div  class="Header">
-                Muhammad Shafay Butt
-            </div>
-            <div id="pic">
-                <img class="profile-pic" src="Profile_pic.png" alt="Profile Picture">
-            </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Shafay | Certificate</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon_img.png" type="image/x-icon"/>
+</head>
+<body>
+    <div class="header-container">
+        <div class="Header">
+            Muhammad Shafay Butt
         </div>
-        <nav class="navbar">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li style="border: none;"><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav> 
-        <div class="Certif"> 
-            <img src="certificate_1.jpg" alt="Intro to computer and OS">
-            <img src="certificate_2.jpg" alt="Take your resume to next Level">
+        <div id="pic">
+            <img class="profile-pic" src="Profile_pic.png" alt="Profile Picture">
         </div>
-        <div class="Certif"> 
-            <img src="certificate_3.jpg" alt="Intro to Excel">
-            <img src="certificate_4.jpg" alt="Intro to Network and Cloud Computing">
-        </div>
-        <div class="Certif"> 
-            <img src="certificate_5.jpg" alt="5 ways to Build a better linkdin profile">
-            <img src="certificate_6.jpg" alt="Create a Business Marketing Brand kit using Canva">
-        </div>
-        <div class="Certif"> 
-            <img src="certificate_7.jpg" alt="Strategically Build and Engage Your Network on LinkedIn">
-            <iframe src="https://www.youtube.com/embed/Z9gUyAykTCw?autoplay=1&mute=1" alt="OnePiece Completion Certificate">
-            </iframe>
-        </div>
-        
-    </body>
+    </div>
+    
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li style="border: none;"><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <div id="certificates-container">    
+    </div>
+
+    <script>
+        const elements =  [
+                { "type": "img", "src": "certificate_1.jpg", "alt": "Intro to computer and OS" },
+                { "type": "img", "src": "certificate_2.jpg", "alt": "Take your resume to next Level" },
+                { "type": "img", "src": "certificate_3.jpg", "alt": "Intro to Excel" },
+                { "type": "img", "src": "certificate_4.jpg", "alt": "Intro to Network and Cloud Computing" },
+                { "type": "img", "src": "certificate_5.jpg", "alt": "5 ways to Build a better LinkedIn profile" },
+                { "type": "img", "src": "certificate_6.jpg", "alt": "Create a Business Marketing Brand kit using Canva" },
+                { "type": "img", "src": "certificate_7.jpg", "alt": "Strategically Build and Engage Your Network on LinkedIn" },
+                { "type": "iframe", "src": "https://www.youtube.com/embed/Z9gUyAykTCw?autoplay=1&mute=1", "alt": "OnePiece Completion Certificate" }
+            ];
+
+        function displayElementsthroughjs() 
+        {
+            const container = document.getElementById("certificates-container");
+            
+            elements.forEach((element, index) => 
+            {
+                const Div = document.createElement('div');
+                
+                Div.classList.add('Certif'); // Assuming you might want to add a class here
+                
+                if (element.type === 'img') 
+                {
+                    const imgTag = document.createElement('img');
+                    imgTag.src = element.src;
+                    imgTag.alt = element.alt;
+                    Div.appendChild(imgTag);
+                } else if (element.type === 'iframe') 
+                {
+                    const iframeTag = document.createElement('iframe');
+                    iframeTag.src = element.src;
+                    iframeTag.setAttribute('alt', element.alt);
+                    Div.appendChild(iframeTag);
+                }
+                container.appendChild(Div);
+            });
+        }
+        displayElementsthroughjs();
+    </script>
+</body>
 </html>
