@@ -11,14 +11,15 @@
     <body >
         <nav class="navbar">
             <ul>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="certificates.html">Certificate</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#certificate">Certificate</a></li>
                 <li style="border: none;"><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <div class="extra-pad">
-        </div>
+        <div class="extra-pad"></div>
+        <div id="urdu">السلام عليكم! میرے پورٹ فولیو میں خوش آمدید</div>
+        
         <div class="header-container">
             <div class="Header">
                 Muhammad Shafay Butt
@@ -28,7 +29,127 @@
             </div>
         </div>
         <p id="welcome">Welcome to my professional portfolio.</p>
-        
+        <div id="about">
+            <h2>About Me</h2>
+            <div id="wel">
+                <p>I'm Muhammad Shafay, a passionate Computer Science student currently in my 5th semester at the Information Technology University with a CGPA of 3.64.</p>
+                <p>I have a strong focus on enhancing my problem-solving skills and a deep interest in learning new technologies. My expertise includes Python, C++, and Assembly programming, with projects such as Chess and Snake games, as well as complex applications like Person Identification using OpenCV.</p>
+                <p>I am also serving as a Teaching Assistant for Object-Oriented Programming at ITU under Mr. Sarfraz Raza and currently teaching Calculus with him.</p>
+            </div>
+            <h2 >Education</h2>
+            <ul id="ul">
+                <li><strong>Information Technology University (ITU)</strong> — Bachelor of Science in Computer Science (in progress), CGPA: 3.64</li>
+                <li><strong>Unique School/College</strong> — Intermediate of Computer Science (2020-2022), Grade: A+ (975/1100)</li>
+                <li><strong>Matriculation</strong> — Computer Science (2018-2020), Grade: A+ (971/1100)</li>
+            </ul>
+            <h2>Experiences</h2>
+            <ul>
+                <li><strong>Teaching Assistant</strong> at Information Technology University, assisted in Object-Oriented Programming under Mr. Sarfraz Raza</li>
+                <li><strong>Teaching Assistant</strong> at Information Technology University, assisting in Calculus under Mr. Sarfraz Raza</li>
+            </ul>
+        </div>
+        <div id="project">
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>Chess Game</strong> — Developed using C++</li>
+                <li><strong>Redis Database</strong> — C++ (Multi-threading and socket programming)</li>
+                <li><strong>Gomuko</strong> — C++, Python with human vs bot functionality</li>
+                <li><strong>Shogi Game</strong> — Developed using C++</li>
+                <li><strong>Snake Game</strong> — Multiplayer/Multilevel version created in C++</li>
+                <li><strong>Huge Real</strong> — C++</li>
+                <li><strong>Person Identification</strong> — Python with NumPy and OpenCV</li>
+                <li><strong>MS Paint Clone</strong> — Built in Python (Tkinter)</li>
+                <li><strong>Scheduler</strong> — Developed in Assembly</li>
+                <li><strong>Farm Management System</strong> — Built using Firebase, React.js, and Node.js, in collaboration with Usman and Momin</li>
+            </ul>
+        </div>
+        <h2 id="certificate">Certificate</h2>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 7</div>
+              <img src="certificate_1.jpg" style="width:100%">
+              <div class="text">Intro to computer and OS</div>
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 7</div>
+              <img src="certificate_2.jpg" style="width:100%">
+              <div class="text">Take your resume to next Level</div>
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 7</div>
+              <img src="certificate_3.jpg" style="width:100%">
+              <div class="text">Intro to Excel</div>
+            </div>
+            
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 7</div>
+                <img src="certificate_4.jpg" style="width:100%">
+                <div class="text">Intro to Network and Cloud Computing</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 7</div>
+                <img src="certificate_5.jpg" style="width:100%">
+                <div class="text">5 ways to Build a better LinkedIn profile</div>
+              </div>
+            
+              <div class="mySlides fade">
+                <div class="numbertext">6 / 7</div>
+                <img src="certificate_6.jpg" style="width:100%">
+                <div class="text">Create a Business Marketing Brand kit using Canva</div>
+              </div>
+            
+              <div class="mySlides fade">
+                <div class="numbertext">7 / 7</div>
+                <img src="certificate_7.jpg" style="width:100%">
+                <div class="text">Strategically Build and Engage Your Network on LinkedIn</div>
+              </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+          
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>  
+           </div>
+        </div>
+        <script >
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+            showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+            showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            }
+
+        </script>
         <section id="contact" class="contact-section">
             <h2>Contact Me</h2>
             <p>Please contact me directly at <a href="mailto:shafay0099@gmail.com">shafay0099@gmail.com</a> or through this form.</p>
