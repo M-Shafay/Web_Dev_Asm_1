@@ -1,13 +1,22 @@
+*
+{
+    margin:0;
+}
 .navbar
 {
-    background-color: rgba(247, 246, 243,0);
+    display: flex;
+    width:100%;
+    background-color:  rgb(50, 52, 47);
     height: 8vw;
-    position:sticky;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    margin-top: 0;
+    position: fixed;
 }
 nav > ul
 {
     padding: 0;
-    padding-top: 2vw;
     list-style-type: none; 
     display: flex;
     flex-direction: row;
@@ -41,6 +50,11 @@ body{
   background-color: #32342F;
   background-size: 100% 100%;
 }
+.extra-pad
+{
+    padding-top: 8vw;
+}
+
 .header-container
 {
     padding-top: 2vw;
