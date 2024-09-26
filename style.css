@@ -1,11 +1,12 @@
 .navbar
 {
-    background-color: rgb(224, 218, 193);
+    background-color: rgba(247, 246, 243,0);
     height: 8vw;
+    position:sticky;
 }
 nav > ul
 {
-    padding: 0;;
+    padding: 0;
     padding-top: 2vw;
     list-style-type: none; 
     display: flex;
@@ -18,32 +19,33 @@ nav > ul > li
     padding-right: 1vw;
     padding-left: 1vw;
     font-size: 3vw;
-    font-family: sans-serif;
-    border-right: 0.5vw solid rgb(116, 173, 199);
+    font-family: 'Pacifico', cursive;
+    border-right: 0.5vw solid #fff8dc;
 }
 nav > ul > li > a
 {
-    color: rgb(58, 98, 186);
+    color: #fff8dc;
     text-decoration: none;
     font-weight: bold;
 }
 li > a:hover
 {
     font-size: 2.7vw;
-    color:rgb(159, 73, 148);
+    color:rgb(255, 248, 220, 0.5);
 }
 body{
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  font-family: 'Public Sans',sans-serif;
+  background-color: #32342F;
   background-size: 100% 100%;
 }
 .header-container
 {
-    margin-top:10vw;
     padding-top: 2vw;
     padding-bottom: 2vw;
-    border-top: 0.5vw solid cornsilk;
+    border-top: 0.5vw solid #fff8dc;
     border-bottom: 0.5vw solid cornsilk;
     display: flex;
     height:15vw;
@@ -56,6 +58,7 @@ body{
     font-size: 5vw;
     color: rgb(224, 218, 193);
     font-weight: bold;
+    font-family: 'Playfair Display', serif;
 }
 #wel
 {
@@ -88,7 +91,7 @@ padding-right: 5vw;
 }
 .contact >p>a
 {
-    color: rgb(104, 147, 240);
+    color: #fff8dc;
     text-decoration: none;
     font-size: 4vw;
     font-weight: bold;
@@ -102,7 +105,7 @@ padding-right: 5vw;
 .contact >p>a:hover
 {
     font-size: 3.7vw;
-    color:rgb(159, 73, 148);
+    color:rgb(255, 248, 220,0.5);
 }
 .contact >p
 {
@@ -111,30 +114,31 @@ padding-right: 5vw;
 h1
 {
     font-size: 5vw;
-    color: rgb(58, 98, 186);
+    color: rgb(255, 248, 220);
 }
 h2
 {
-    color: rgb(58, 98, 186);
+    color: rgb(255, 248, 220);
     font-size :4vw;
 }
 li
 {
-    color: rgb(58, 98, 186);
+    color: rgb(255, 248, 220);
     font-size:3vw;
 }
 p{
     font-size: 3vw;
-    color: rgb(58, 98, 186);
+    color: rgb(255, 248, 220);
 }
 #urdu
 {
     display:flex;
     flex-direction: row;
     width: 95vw;
-    height: 6vw;
-    font-size: 6vw;
-    margin-top: 5vw;
+    height: 5vw;
+    color: #fff8dc;
+    font-size: 2.5vw;
+    margin-top: 2.5vw;
     margin-right: 5vw;
     justify-content: end;
     padding-right: 10vw;
@@ -148,14 +152,14 @@ p{
 .Certif >img
 {
     width: 50vw;
-    height: 50vw;
+    height: 40vw;
     padding-right: 5%;
 }
 iframe
 {
     justify-content:center;
     width: 50vw;
-    height: 50vw;
+    height: 40vw;
     border: none;
     padding-right: 5%;
 }

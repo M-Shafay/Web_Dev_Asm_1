@@ -8,15 +8,6 @@
     <link rel="icon" href="icon_img.png" type="image/x-icon"/>
 </head>
 <body>
-    <div class="header-container">
-        <div class="Header">
-            Muhammad Shafay Butt
-        </div>
-        <div id="pic">
-            <img class="profile-pic" src="Profile_pic.png" alt="Profile Picture">
-        </div>
-    </div>
-    
     <nav class="navbar">
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -25,6 +16,15 @@
             <li style="border: none;"><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
+    
+    <div class="header-container">
+        <div class="Header">
+            Muhammad Shafay Butt
+        </div>
+        <div id="pic">
+            <img class="profile-pic" src="Profile_pic.png" alt="Profile Picture">
+        </div>
+    </div>
     
     <div id="certificates-container">    
     </div>
@@ -38,7 +38,7 @@
                 { "type": "img", "src": "certificate_5.jpg", "alt": "5 ways to Build a better LinkedIn profile" },
                 { "type": "img", "src": "certificate_6.jpg", "alt": "Create a Business Marketing Brand kit using Canva" },
                 { "type": "img", "src": "certificate_7.jpg", "alt": "Strategically Build and Engage Your Network on LinkedIn" },
-                { "type": "iframe", "src": "https://www.youtube.com/embed/Z9gUyAykTCw?autoplay=1&mute=1", "alt": "OnePiece Completion Certificate" }
+                { "type": "iframe", "src": "https://www.youtube.com/embed/Z9gUyAykTCw?autoplay=1&mute=1" }
             ];
 
         function displayElementsthroughjs() 
@@ -61,7 +61,6 @@
                 {
                     const iframeTag = document.createElement('iframe');
                     iframeTag.src = element.src;
-                    iframeTag.setAttribute('alt', element.alt);
                     Div.appendChild(iframeTag);
                 }
                 container.appendChild(Div);
