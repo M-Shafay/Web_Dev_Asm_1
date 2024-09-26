@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Muhammad Shafay | Portfolio</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
         <link rel="icon" href="icon_img.png"type= "image/x-icon"/>
     </head>
     <body >
@@ -13,7 +14,7 @@
                 <li><a href="about.html">About</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="certificates.html">Certificate</a></li>
-                <li style="border: none;"><a href="contact.html">Contact</a></li>
+                <li style="border: none;"><a href="#contact">Contact</a></li>
             </ul>
         </nav>
         <div class="extra-pad">
@@ -26,8 +27,50 @@
                 <img class="profile-pic" src="Profile_pic.png" alt="Profile Picture">
             </div>
         </div>
-        <p id="wel">Welcome to my professional portfolio.</p>
+        <p id="welcome">Welcome to my professional portfolio.</p>
         
+        <section id="contact" class="contact-section">
+            <h2>Contact Me</h2>
+            <p>Please contact me directly at <a href="mailto:shafay0099@gmail.com">shafay0099@gmail.com</a> or through this form.</p>
+            
+            <form class="contact-form">
+                <input type="email" name="email" placeholder="Your email" required>
+                <textarea name="message" placeholder="Your message" rows="5" required></textarea>
+                <button type="submit" class="submit-btn">
+                    <img src="paper-plane.png" alt="Send Icon" class="send-icon"> Send Message
+                </button>
+            </form>
         
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/shafay-butt/" target="_blank">
+                    <img src="linkdin.png" alt="LinkedIn Icon" class="social-icon">
+                </a>
+                <a href="https://github.com/M-Shafay" target="_blank">
+                    <img src="github.png" alt="GitHub Icon" class="social-icon">
+                </a>
+                <a href="mailto:shafay0099@gmail.com">
+                    <img src="mail.png" alt="Email Icon" class="social-icon">
+                </a>
+            </div>
+        </section>        
+        <footer class="footer-section">
+            <div class="footer-container">
+                <p>&copy; 2024 Muhammad Shafay Butt | All rights reserved.</p>
+                <div class="footer-social-icons">
+                    <a href="https://www.linkedin.com/in/shafay-butt/" target="_blank">
+                        <img src="linkdin.png" alt="LinkedIn Icon" class="footer-icon">
+                    </a>
+                    <a href="https://github.com/M-Shafay" target="_blank">
+                        <img src="github.png" alt="GitHub Icon" class="footer-icon">
+                    </a>
+                    <a href="mailto:shafay0099@gmail.com">
+                        <img src="mail.png" alt="Email Icon" class="footer-icon">
+                    </a>
+                    <a href="https://leetcode.com/u/shafay0099/" target="_blank">
+                        <img src="leetcode.png" alt="LeetCode Icon" class="footer-icon">
+                    </a>
+                </div>
+            </div>
+        </footer>   
     </body>
 </html>
